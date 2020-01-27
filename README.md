@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [-] Create a forked copy of this project.
+- [-] Add your _Team Lead_ as collaborator on Github.
+- [-] Clone your forked version of the Repository.
+- [-] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [-] Implement the project on this Branch, committing changes regularly.
+- [-] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -39,14 +39,21 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+        Routing- how an application's endpoints respond to client requests
+        Middleware- functions that execute during the lifecycle of a request to                the server
 
 - [ ] Describe Middleware?
+        Middleware is the collection of functions that execute during the lifecycle of a request to the server. 
 
 - [ ] Describe a Resource?
+        A recource is the fundamental concept in any RESTful API. It's an object with a type, associated data, relationships to other resouces, and a set of methods that operate on it.
+
 
 - [ ] What can the API return to help clients know if a request was successful?
+        Apart from the requested data, the API can return status codes to help clients know if a request was successful.
 
 - [ ] How can we partition our application into sub-applications?
+        We can partition our application into sub applications with the use of module importing and routing middleware to divide the API into different files based on URL paths.
 
 ## Minimum Viable Product
 

@@ -17,7 +17,7 @@ This is too great to delete, so it will live here in my project forever.
 
 const express = require("express");
 const projectsRouter = require(".routes/projectsRouter.js");
-const actionsRouter = require("/routes/actionRouter.js");
+const actionsRouter = require("/routes/actionsRouter.js");
 const server = express();
 
 server.use(express.json());

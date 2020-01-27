@@ -11,4 +11,17 @@ there is no data on that route, just write some code, you'll sort it out… don'
 I need this code, but don't know where, perhaps should make some middleware, don't worry, just hack it
 
 Go code!
+
+This is too great to delete, so it will live here in my project forever.
 */
+
+const express = require("express");
+const projectsRouter = require(".routes/projectsRouter.js");
+const actionsRouter = require("/routes/actionRouter.js");
+const server = express();
+
+server.use(express.json());
+server.use("/projects", projectsRouter);
+server.use("/actions", actionsRouter);
+
+server.listen(8000, () => console.log("API is listening on port 8000"));

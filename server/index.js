@@ -16,12 +16,12 @@ This is too great to delete, so it will live here in my project forever.
 */
 
 const express = require("express");
-const projectsRouter = require(".routes/projectsRouter.js");
-const actionsRouter = require("/routes/actionsRouter.js");
+const projectsRouter = require("./routes/projectsRouter");
+const actionsRouter = require("./routes/actionsRouter");
 const server = express();
 
 server.use(express.json());
 server.use("/projects", projectsRouter);
 server.use("/actions", actionsRouter);
 
-server.listen(8000, () => console.log("API is listening on port 8000"));
+server.listen(8000, () => console.log("*** API ON PORT: 8000 ***"));

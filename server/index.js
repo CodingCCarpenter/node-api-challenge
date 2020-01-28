@@ -11,4 +11,21 @@ there is no data on that route, just write some code, you'll sort it out… don'
 I need this code, but don't know where, perhaps should make some middleware, don't worry, just hack it
 
 Go code!
+
+This is too great to delete, so it will live here in my project forever.
 */
+
+const express = require("express");
+//use cors to allow access from my react app
+const cors = require("cors");
+
+const projectsRouter = require("./routes/projectsRouter");
+const actionsRouter = require("./routes/actionsRouter");
+const server = express();
+
+server.use(cors());
+server.use(express.json());
+server.use("/projects", projectsRouter);
+server.use("/actions", actionsRouter);
+
+server.listen(8000, () => console.log('server/index.js Server listening on port 8000. Cors enabled'));
